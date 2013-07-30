@@ -13,90 +13,148 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
-    <style type="text/css">
-
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
-
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-	height: 363px;
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-    </style>
   </head>
+  <style>
+    @media (min-width: 980px) { 
+      body {
+       padding-top: 60px;
+      }
+     .linediv-l {
+       border-right: 1px white solid;
+      }
+     .linediv-r {
+       border-left: 1px white solid;
+     }
+    }
+
+    @media (max-width: 480px) { 
+     .copy {
+       padding: 2.5% 10%;
+     }
+     .linediv-l {
+       border-bottom: 1px white solid;
+     }
+     .linediv-r {
+       border-top: 1px white solid;
+     }
+    }
+
+    /* Main body and headings */
+    body{
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      background-color: #343434;
+    }
+    .heading, .subheading {
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: left;
+    }
+    .heading h1 {
+      color: #730adb;
+      font-size: 60px;
+    }
+    .statement {
+      height: 10%;
+      width: 100%;
+      border: solid 1px blue;
+    }
+    p.lead {
+      padding-top: 1.5%;
+      font-size: 22px;
+      color: #f0ff00;
+      /*line-height: 30px;*/
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    div.row-fluid {
+        border: solid 1px blue;
+    }
+    /*
+    .row-fluid > .actions {
+      display: inline-block !important;
+      border: solid 1px red;
+      vertical-align: middle;
+    }
+    */
+    /* Video pitch and Action */
+    .pitch {
+      padding: 0% 0% 10% 0%;
+      background-color: #ffffff;
+    }
+    .character {
+
+      padding-bottom: 15%;
+    }
+    .character img {
+      margin-top: -15%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .wingrl{
+      background-color: #f0ff00;
+    }
+    .guys img {
+      float: right;
+    }
+    table.survey {
+      color: #fffff;
+    }
+    .girls{
+      background-color: #ffffff;
+    }
+    .order {
+      padding: 0% 0%;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .actions {
+      background-color: #5a5a5a;
+      padding: 0% 0%;
+    }
+    .progress {
+      margin: 2px;
+    }
+    .statistics {
+      vertical-align: top;
+      text-align: center;
+      padding: 1px;
+      margin: 1px;
+    }
+    .thermometer {
+
+    }
+    .video, .social {
+      vertical-align: middle;
+      text-align: center;
+    }
+    .statistics h3, .statistics p {
+      color: white;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    /* Marketing Copy and Footer */
+    .copy {
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      text-align: justify;
+    }
+    .asset {
+      padding: 2.5% 0%;
+    }
+    .footer {
+      color: #cccccc;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 11px;
+    }
+    .footer a {
+      color: #ccccff;
+    }
+  </style>
   <body>
 
     <!-- Mobile-friendly navbar adapted from example. -->
@@ -123,138 +181,121 @@
     </div>
 
     <div class="container">
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Wingrl</h1>
+      <div class="row-fluid statement">
+        <div class="span8">
+          <div class="row-fluid heading">
+             <div class="span12">
+               <h1>Wingrl</h1>
+             </div>
+          </div> 
+          <div class="row-fluid subheading">
+            <div class="span12">
+              <p class="lead">Meet Your Dating Sidekick</p>
+            </div>
+          </div>
         </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <p class="lead">Fly Higher into the Date-o-sphere</p>
-        </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://node.emelle.webfactional.com/static/media/images/wingrl.jpg">
-        </div>
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
+        
+        <div class="span4 actions">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                  <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$0</h3> <p>of $10,000</p>
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>30</h3> <p>days left</p>
+                  <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="span10 offset1">
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
-            </div>
-          </div>
-          <div class="span6 offset3 order">
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          <div class="span8 offset2 social">
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://node.emelle.webfactional.com/static/media/images/wingrl.jpg">
-        </div>
-        <div class="span5 copy">
-          <p>
-	    <b>Men</b>, give your Wingman a vacation and find the Wingrl(s) who will best represent you.
-            Each Wingrl has a loyal trusted following of women. Connect with your Wingrl at
-            different levels: chat on the phone, video chat, coffee nearby,
-            or perhaps she will want to fly across country to meet you. The goal
-            is for her to verify that you are the amazing person you say you are. 
-            Wingrls seek unique men for their brand. One may highlight what a fit,
-            sensitive, hilarious, and commmited gentleman you are. Another may showcase
-            your seat-of-the-pants, jet-setting lifestyle. Yet another might be intent on
-            promoting your preference for outdoorsy hikes and camping under the stars.
-            However it unfolds, know that your Wingrl thinks you are special.
-            Sit back and receive the positive attention you deserve.
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-	    <b>Single Ladies</b>, find your trusted troupe of Wingrls to follow! Your real-life girlfriends
-            may not have many high-quality single guys to introduce you to,
-            but your Wingrls are always searching for you. Believe your Wingrl when she tells
-            you he is actually tall, dark, &amp; handsome, or that he is short, round, &amp; bald but will
-            delight you with his spontaneity and cooking skills. Drop the cold interview 
-            questions on first-meet, and let yourself connect to these vetted gems!
-            <b>Wingrls</b>, you know who you are. You love being honest and finding matches made in
-            heaven (or a fiesty underworld). Build relationships that last and help women
-            everywhere find the love, lust, and dance partners we've all been searching for.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://node.emelle.webfactional.com/static/media/images/collage_couples.jpg">
-        </div>
-      </div>
-
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                     Who can be a Wingrl?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                     How do I get chosen by a Wingrl?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
+            <div class="row-fluid">
+              <div class="span10 offset1">
+                <div class="thermometer progress active">
+                  <div class="bar bar-success" style="width: 0%;"></div>
+                  <div class="bar bar-warning" style="width: 100%;"></div>
                 </div>
               </div>
             </div>
+            <div class="row-fluid">
+              <div class="span10 offset1 order">
+                <button class="btn btn-success">Fund</button>
+                <button class="btn btn-twitter"><i class="icon-twitter"></i></button>
+                <button class="btn btn-facebook"><i class="icon-facebook"></i></button>
+              </div>
+            </div>
           </div>
-
+        </div>
       </div>
-
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+      <div class="container">
+        <div class="row-fluid pitch">
+          <div class="span12">
+            <img class="img" src="http://placehold.it/1280x480/4a0089/f0ff00">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-fluid character wingrl">
+          <div class="span4">
+            <img class="img hero" src="http://placehold.it/300x300/4a0089/f0ff00">
+          </div>
+          <div class="span8">
+            <table class="survey">
+              <tr class="superpower">
+                <td>Superpower:</td><td></td>
+              </tr>
+              <tr class="victory">
+                <td>Victories:</td><td></td>
+              </tr>
+              <tr class="dayjob">
+                <td>Day Jobs:</td><td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-fluid character guys">
+          <div class="span8">
+            <table class="survey">
+              <tr class="superpower">
+                <td>Superpower:</td><td></td>
+              </tr>
+              <tr class="victory">
+                <td>Victories:</td><td></td>
+              </tr>
+              <tr class="dayjob">
+                <td>Day Jobs:</td><td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="span4">
+            <img class="img hero" src="http://placehold.it/300x300/ffffff/000000">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row-fluid character girls">
+          <div class="span4">
+            <img class="img hero" src="http://placehold.it/300x300/4a0089/730adb">
+          </div>
+          <div class="span8">
+            <table class="survey">
+              <tr class="superpower">
+                <td>Superpower:</td><td></td>
+              </tr>
+              <tr class="victory">
+                <td>Victories:</td><td></td>
+              </tr>
+              <tr class="dayjob">
+                <td>Day Jobs:</td><td></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
