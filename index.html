@@ -93,10 +93,19 @@
       margin-top: -15%;
       vertical-align: middle;
     }
+    .survey {
+
+      height: 100%
+    }
     .wingrl{
       background-color: #f0ff00;
     }
-    .guys img {
+    #topGuyHeroCanvas {
+      margin-right: 10%
+      vertical-align: bottom;
+      float: right;
+    }
+    #btmGuyHeroCanvas {
       float: right;
     }
     table, tr, td {
@@ -259,6 +268,30 @@
             </table>
           </div>
         </div>
+        <div class="row-fluid wingrl">
+          <div class="span4 offset7">
+            <canvas class="hero" id="topGuyHeroCanvas" width="350" height="150"></canvas>
+              <script>
+                var canvas = document.getElementById('topGuyHeroCanvas');
+                var context = canvas.getContext('2d');
+                var centerX = canvas.width / 2;
+                var centerY = canvas.height + canvas.height / 3.25;
+                var radius = 150;
+
+                startAngle = 1.1 * Math.PI;
+                endAngle = 1.9 * Math.PI;
+
+                context.beginPath();
+                context.arc(centerX, centerY, radius, startAngle, endAngle, false);
+                context.fillStyle = '#343434';
+                context.fill();
+                context.lineWidth = 8;
+                context.strokeStyle = '#ffffff';
+                context.stroke();
+              </script>
+            </canvas>
+          </div>
+        </div>
       </div>
       <div class="container">
         <div class="row-fluid character guys">
@@ -276,7 +309,26 @@
             </table>
           </div>
           <div class="span4 offset1">
-            <img class="img-polaroid hero" src="http://placehold.it/300x300">
+            <canvas class="hero" id="btmGuyHeroCanvas" width="350" height="350"></canvas>
+              <script>
+                var canvas = document.getElementById('btmGuyHeroCanvas');
+                var context = canvas.getContext('2d');
+                var centerX = canvas.width / 2;
+                var centerY = canvas.height / 8;
+                var radius = 150;
+
+                startAngle = 1.1 * Math.PI;
+                endAngle = 1.9 * Math.PI;
+
+                context.beginPath();
+                context.arc(centerX, centerY, radius, startAngle, endAngle, true);
+                context.fillStyle = '#343434';
+                context.fill();
+                context.lineWidth = 8;
+                context.strokeStyle = '#ffffff';
+                context.stroke();
+              </script>
+            </canvas>
           </div>
         </div>
       </div>
