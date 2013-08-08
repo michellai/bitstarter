@@ -131,7 +131,7 @@
     .order {
       padding: 0% 0%;
       vertical-align: middle;
-      text-align: center;
+      text-align: right;
     }
     .actions {
       background-color: #5a5a5a;
@@ -149,9 +149,14 @@
     .thermometer {
 
     }
-    .video, .social {
+    .video {
       vertical-align: middle;
       text-align: center;
+    }
+    .social {
+      vertical-align: middle;
+      text-align: left;
+      margin-left: 0px;
     }
     .statistics h3, .statistics p {
       color: white;
@@ -178,9 +183,12 @@
     .footer a {
       color: #ccccff;
     }
+    .coinbase-button2 {
+      margin-right: 0px;
+    }
     /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
     div.addthis_toolbox {
-      width:100%;
+      width:180px;
       margin: 0 auto;
     }
   </style>
@@ -211,7 +219,7 @@
 
     <div class="container">
       <div class="row-fluid statement">
-        <div class="span8">
+        <div class="span6">
           <div class="row-fluid heading">
              <div class="span12">
                <h1>Wingrl</h1>
@@ -222,25 +230,9 @@
               <p class="lead">Your Sidekick for Crimes of Passion</p>
             </div>
           </div>
-          <div class="row-fluid social">
-            <div class=span12">
-              <!-- AddThis Button BEGIN -->
-              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-              <a class="addthis_button_preferred_1"></a>
-              <a class="addthis_button_preferred_2"></a>
-              <a class="addthis_button_preferred_3"></a>
-              <a class="addthis_button_preferred_4"></a>
-              <a class="addthis_button_compact"></a>
-              <a class="addthis_counter addthis_bubble_style"></a>
-              </div>
-              <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201d9cd306771a3"></script>
-              <!-- AddThis Button END -->
-            </div>
-          </div>
         </div>
         
-        <div class="span4 actions">
+        <div class="span6 actions">
             <div class="row-fluid statistics">
               <div class="span4">
                 <div class="linediv-l">
@@ -267,10 +259,21 @@
               </div>
             </div>
             <div class="row-fluid">
-              <div class="span10 offset1 order">
-                <button class="btn btn-success">Fund</button>
-                <button class="btn btn-twitter"><i class="icon-twitter"></i></button>
-                <button class="btn btn-facebook"><i class="icon-facebook"></i></button>
+              <div class="span6 order">
+                <a class="btn coinbase-button" data-code="1d4e1d73fb49633d5b869b5cbfad6f3e" data-button-style="custom_small" href="https://coinbase.com/checkouts/1d4e1d73fb49633d5b869b5cbfad6f3e">Donate Bitcoins</a>
+                <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+              </div>
+              <div class="span6 social">
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                  <a class="btn addthis_button_preferred_1"></a>
+                  <a class="btn addthis_button_preferred_2"></a>
+                  <a class="btn addthis_button_preferred_3"></a>
+                  <a class="btn addthis_button_compact"></a>
+                </div>
+                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201d9cd306771a3"></script>
+                <!-- AddThis Button END -->
               </div>
             </div>
           </div>
